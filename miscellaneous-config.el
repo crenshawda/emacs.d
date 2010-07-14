@@ -16,4 +16,10 @@
 ;; End all files with a newline
 (setq require-final-newline t)
 
+; y/n instead of yes/no
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+; Cut/Paste with C-x/C-c/C-v
+(cua-mode t)
+
 (provide 'miscellaneous-config)
